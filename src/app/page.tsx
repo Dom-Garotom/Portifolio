@@ -1,8 +1,8 @@
 import Image from "next/image";
-import HeroSection from "./components/hero";
-import CompetenciaSection from "./components/competence";
-import ProjectSection from "./components/sectionProject";
-import ContactSection from "./components/sectionContact";
+import HeroSection from "../components/hero";
+import CompetenciaSection from "../components/competence";
+import ProjectSection from "../components/sectionProject";
+import ContactSection from "../components/sectionContact";
 
 export default function Home() {
   return (
