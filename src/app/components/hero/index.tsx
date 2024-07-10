@@ -21,22 +21,22 @@ function HeroSection() {
                 <p className="text-gray-400 w-[530px]">Olá, meu nome é Pedro Costa e sou um desenvolvedor front-end apaixonado por tecnologia. Com mais de <b className="text-white" >5 anos de experiência</b>. Meu objetivo é criar interfaces de usuário bonitas e funcionais, além de liderar equipes técnicas em projetos desafiadores. Estou sempre aberto a novas oportunidades e desafios.</p>
 
                 <div className="flex flex-row flex-wrap gap-2 max-w-[450px]">
-                    <ItenSkill content="Next js" variant="bg-emerald-900 text-emerald-400" />
-                    <ItenSkill content="React" variant="bg-emerald-900 text-emerald-400" />
-                    <ItenSkill content="Javascript" variant="bg-emerald-900 text-emerald-400" />
-                    <ItenSkill content="Typescript" variant="bg-emerald-900 text-emerald-400" />
-                    <ItenSkill content="Tailwind" variant="bg-emerald-900 text-emerald-400" />
-                    <ItenSkill content="Ui/UX" variant="bg-emerald-900 text-emerald-400" />
-                    <ItenSkill content="Git" variant="bg-emerald-900 text-emerald-400" />
+                    <ItenSkill content="Next js" />
+                    <ItenSkill content="React" />
+                    <ItenSkill content="Javascript" />
+                    <ItenSkill content="Typescript" />
+                    <ItenSkill content="Tailwind" />
+                    <ItenSkill content="Ui/UX" />
+                    <ItenSkill content="Git" />
                 </div>
 
                 <div className=" flex gap-5">
                     <ButtonCTA content="Entre em contato" />
                     <div className=" flex justify-between items-center gap-3 text-slate-700 text-2xl   ">
                         <LuGithub />
-                        <CiLinkedin/>
-                        <FaWhatsapp/>
-                        <MdOutlineMarkEmailRead />  
+                        <CiLinkedin />
+                        <FaWhatsapp />
+                        <MdOutlineMarkEmailRead />
                     </div>
                 </div>
             </div>

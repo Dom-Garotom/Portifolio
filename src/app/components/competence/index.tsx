@@ -7,16 +7,14 @@ import { IoLogoCss3 } from "react-icons/io";
 import { FaHtml5 } from "react-icons/fa";
 import { SiSass } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
+import TitleDefault from "./title";
 
 
 function CompetenciaSection() {
     return (
         <section className=" flex flex-col items-center justify-around pt-20 bg-gray-900 w-[99vw] pb-20">
             <div className="flex flex-col gap-20 justify-between">
-                <div className="flex items-start flex-col gap-5">
-                    <span className="text-emerald-500 tracking-wider text-lg ">. . /Competências</span>
-                    <h2 className="text-4xl font-medium">Conhecimentos</h2>
-                </div>
+                <TitleDefault title="Conhecimentos" subTitle="competências" />
 
                 <div className="flex flex-wrap wrap gap-4 w-[80vw] ">
                     <CardSkill title="Javascript" subTitle="Nível intermédiario" icon={<RiJavascriptLine />} />
