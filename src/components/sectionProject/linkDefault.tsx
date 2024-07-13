@@ -12,16 +12,16 @@ interface LinkDefaultProp {
 
 function LinkDefault(prop: LinkDefaultProp) {
     return (
-        <span>
+        <span className="flex gap-2 text-gray-500">
             {prop.text} {''}
-            < Link href={prop.href} className="flex items-center gap-3 text-white" >
-                {prop.linkText}
-                {prop.right ? (
-                    <FaArrowRightLong />
-                ) : (
-                    <FaArrowLeftLong />
-                )
-                }
+            < Link href={prop.href} className="flex items-center gap-3 text-white " >
+                {prop.left && (<FaArrowLeftLong />)}
+
+                <span className="transition-all hover:font-bold ">
+                    {prop.linkText}
+                </span>
+
+                {prop.right && (<FaArrowRightLong />)}
             </Link >
         </span >
     )

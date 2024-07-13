@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ButtonCTA from "../ButtonCTA";
 import ItenSkill from "../hero/itenSkill";
-import foto from "../../../../public/images/Foto (1).png"
+import foto from "../../../public/images/Foto (1).png"
 import { CgPathExclude } from "react-icons/cg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import React, { ReactNode, ReactPortal } from "react";
