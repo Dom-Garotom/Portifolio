@@ -1,5 +1,5 @@
-import Image from "next/image"
-import Person from "../../../public/images/person.png"
+import Image from "next/image";
+import Person from "../../../public/images/person.png";
 import ItenSkill from "./itenSkill";
 import ButtonCTA from "../ButtonCTA";
 import { LuGithub } from "react-icons/lu";
@@ -9,18 +9,17 @@ import { MdOutlineMarkEmailRead } from "react-icons/md";
 
 function HeroSection() {
     return (
-        <section className="flex flex-row-reverse items-center justify-around pt-20 bg-hero-image bg-cover bg-no-repeat h-[100vh]">
-            <div className="w-[450px]"></div>
-            <div className="flex flex-col h-[400px] justify-between items-start ">
+        <section className="flex flex-col-reverse md:flex-row-reverse items-center justify-around pt-20 bg-hero-image bg-cover bg-no-repeat h-[100vh]">
+            <div className="w-full md:w-[450px]"></div>
+            <div className="flex flex-col h-auto md:h-[400px] justify-between items-start p-4 md:p-0">
                 <div>
                     <p className="text-emerald-500 font-mono text-base mb-3">Olá, meu nome é </p>
-                    <h1 className="text-5xl font-semi mb-4">Gean Ferreira</h1>
+                    <h1 className="text-3xl md:text-5xl font-semi mb-4">Gean Ferreira</h1>
                 </div>
 
+                <p className="text-gray-400 w-full md:w-[530px]">Olá, meu nome é Gean Ferreira e sou um desenvolvedor front-end apaixonado por tecnologia. Com <b className="text-white" >1 ano de estudos em tecnologia</b>. Meu objetivo é criar interfaces de usuário bonitas e fazer o que amo. Gosto de projetos desafiadores, estou sempre aberto a novas oportunidades e desafios.</p>
 
-                <p className="text-gray-400 w-[530px]">Olá, meu nome é Gean Ferreira e sou um desenvolvedor front-end apaixonado por tecnologia. Com <b className="text-white" >1 ano de estudos em tecnologia</b>. Meu objetivo é criar interfaces de usuário bonitas e fazer o que amo. Gosto de projetos desafiadores, estou sempre aberto a novas oportunidades e desafios.</p>
-
-                <div className="flex flex-row flex-wrap gap-2 max-w-[450px]">
+                <div className="flex flex-row flex-wrap gap-2 max-w-full md:max-w-[450px]">
                     <ItenSkill content="Next js" />
                     <ItenSkill content="React" />
                     <ItenSkill content="Javascript" />
@@ -30,9 +29,9 @@ function HeroSection() {
                     <ItenSkill content="Git" />
                 </div>
 
-                <div className=" flex gap-5">
+                <div className="flex flex-col md:flex-row gap-5">
                     <ButtonCTA content="Entre em contato" caminho="/contact" />
-                    <div className=" flex justify-between items-center gap-3 text-slate-700 text-2xl   ">
+                    <div className="flex justify-between items-center gap-3 text-slate-700 text-2xl">
                         <LuGithub />
                         <CiLinkedin />
                         <FaWhatsapp />
@@ -40,9 +39,8 @@ function HeroSection() {
                     </div>
                 </div>
             </div>
-
         </section>
-    )
+    );
 }
 
 export default HeroSection;
