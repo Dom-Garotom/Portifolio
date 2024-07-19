@@ -22,7 +22,9 @@ function HerosPages(prop : HeroPagesProps) {
                 </div>
             </div>
 
-            {prop.children}
+            <div className="flex flex-col gap-16 mb-10">
+                {prop.children}
+            </div>
 
             <LinkDefault href={prop.href} linkText={prop.linkText} left />
 

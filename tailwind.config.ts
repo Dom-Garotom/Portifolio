@@ -1,22 +1,24 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: ["class"],
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}',
   ],
-
   theme: {
     fontFamily: {
       sans: ['var(--font-inter)', 'sans-serif'],
+      mono: ['var(--font-plex-mono)', 'monospace'],
     },
     extend: {
       backgroundImage: {
         'hero-image': "url('/images/hero-bg.png')",
-      },
-      fontFamily: {
-        mono: ['var(--font-plex-mono)', 'monospace'],
       },
       boxShadow: {
         button: '0px 0px 68px 7px rgba(5, 150, 105, 0.4)',
@@ -25,4 +27,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;
