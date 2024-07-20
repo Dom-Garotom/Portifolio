@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Person from "../../../public/images/person.png";
+import Person from "../../../public/images/person-12.png";
 import ItenSkill from "./itenSkill";
 import ButtonCTA from "../ButtonCTA";
 import { LuGithub } from "react-icons/lu";
@@ -10,8 +10,13 @@ import { MdOutlineMarkEmailRead } from "react-icons/md";
 function HeroSection() {
     return (
         <section className="flex flex-col-reverse md:flex-row-reverse items-center justify-around pt-20 bg-hero-image bg-cover bg-no-repeat h-[100vh]">
-            <div className="w-full md:w-[450px]"></div>
-            <div className="flex flex-col h-auto md:h-[400px] justify-between items-start p-4 md:p-0">
+            <Image
+                className="aspect-auto hidden md:block md:w-[450px] lg:w-[550px] h-[450px]"
+                src={Person}
+                alt=""
+                width={550}
+            />
+            <div className="flex flex-col h-auto md:max-w-[400]  gap-5  justify-between items-start p-4 md:p-0">
                 <div>
                     <p className="text-emerald-500 font-mono text-base mb-3">Olá, meu nome é </p>
                     <h1 className="text-3xl md:text-5xl font-semi mb-4">Gean Ferreira</h1>

@@ -14,7 +14,7 @@ function ServiceSection() {
             <div className="flex flex-col gap-20 justify-between">
                 <TitleDefault title="Como posso te ajudar ?" subTitle="Serviços" />
 
-                <div className="flex gap-4 w-[80vw] ">
+                <div className="flex flex-col px-10 md:flex-row gap-4 w-[80vw] ">
 
                     <CardService
                         title="Designer UX/UI"
