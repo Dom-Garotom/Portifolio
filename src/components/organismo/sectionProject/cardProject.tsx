@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import ButtonCTA from "../ButtonCTA";
+import ButtonCTA from "../../moleculas/ButtonCTA";
 import ItenSkill from "../hero/itenSkill";
 import foto from "../../../public/images/Foto (1).png";
 import { CgPathExclude } from "react-icons/cg";

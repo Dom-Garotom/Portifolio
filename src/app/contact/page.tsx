@@ -1,4 +1,4 @@
-import ButtonCTA from "@/components/ButtonCTA";
+import ButtonCTA from "@/components/moleculas/ButtonCTA";
 import { MdArrowForward } from "react-icons/md";
 
 function ContactPage() {

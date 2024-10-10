@@ -1,4 +1,4 @@
-import ButtonCTA from "../ButtonCTA";
+import ButtonCTA from "../../moleculas/ButtonCTA";
 import CardSkill from "../competence/cardSkill";
 import TitleDefault from "../competence/title";
 import ItenSkill from "../hero/itenSkill";

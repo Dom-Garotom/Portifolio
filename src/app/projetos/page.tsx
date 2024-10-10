@@ -1,7 +1,7 @@
 'use client';
 
-import ProjectItem from "@/components/projectsItem";
-import HerosPages from "@/components/HeroPages";
+import ProjectItem from "@/components/moleculas/projectsItem";
+import HerosPages from "@/components/organismo/HeroPages";
 import Link from "next/link";
 import Eduster from "../../../public/tumbs/tumb-eduster.png"
 import Pagination from "../../../public/tumbs/tumb-pagination.png"

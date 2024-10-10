@@ -1,10 +1,10 @@
-import ButtonCTA from "@/components/ButtonCTA";
-import HerosPages from "@/components/HeroPages";
+import ButtonCTA from "@/components/moleculas/ButtonCTA";
+import HerosPages from "@/components/organismo/HeroPages";
 import { LuGithub } from "react-icons/lu";
 import { CiLinkedin } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
-import ItenSkill from "@/components/hero/itenSkill";
+import ItenSkill from "@/components/organismo/hero/itenSkill";
 import Image from "next/image";
 import Project from "../../../public/images/project.png"
 import { ReactNode } from "react";

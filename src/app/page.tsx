@@ -1,9 +1,9 @@
 import Image from "next/image";
-import HeroSection from "../components/hero";
-import CompetenciaSection from "../components/competence";
-import ProjectSection from "../components/sectionProject";
-import ServiceSection from "../components/servicesSection"
-import SectionContact from "@/components/sectionContact";
+import HeroSection from "../components/organismo/hero";
+import CompetenciaSection from "../components/organismo/competence";
+import ProjectSection from "../components/organismo/sectionProject";
+import ServiceSection from "../components/organismo/servicesSection"
+import SectionContact from "@/components/organismo/sectionContact";
 
 export default function Home() {
   return (

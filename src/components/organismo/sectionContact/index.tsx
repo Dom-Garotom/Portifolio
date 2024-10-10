@@ -1,4 +1,4 @@
-import ButtonCTA from "../ButtonCTA";
+import ButtonCTA from "../../moleculas/ButtonCTA";
 
 function SectionContact() {
     return (
