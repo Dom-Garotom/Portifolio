@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { BsDiscord } from "react-icons/bs";
-import logo from "../../../public/images/logo.svg"
+import logo from "../../../../public//images/logo.svg"
 
 function Footer() {
     return (

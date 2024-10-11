@@ -1,6 +1,6 @@
 import Image from "next/image";
 import HeaderLink from "./headerLink";
-import img from '../../../public/images/logo.svg'
+import img from '../../../../public/images/logo.svg'
 
 function Header() {
     return (

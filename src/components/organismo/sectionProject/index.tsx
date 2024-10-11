@@ -5,9 +5,9 @@ import CardProject from "./cardProject";
 import ItenSkill from "../hero/itenSkill";
 import LinkDefault from "./linkDefault";
 import Eduster from "../../../public/tumbs/tumb-eduster.png";
-import Pagination from "../../../public/tumbs/tumb-pagination.png";
-import Lista from "../../../public/tumbs/tumb-lista.png";
-import ToDo from "../../../public/tumbs/tumb-toDo.png";
+import Pagination from "../../../../public/tumbs/tumb-pagination.png";
+import Lista from "../../../../public/tumbs/tumb-lista.png";
+import ToDo from "../../../../public/tumbs/tumb-toDo.png";
 import Lingua from "../../../public/tumbs/tumb-lingua.png";
 import Musik from "../../../public/tumbs/tumb-musik.png";
 

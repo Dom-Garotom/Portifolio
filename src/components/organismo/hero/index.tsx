@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Person from "../../../public/images/person-12.png";
+import Person from "../../../../public/images/person-12.png";
 import ItenSkill from "./itenSkill";
 import ButtonCTA from "../../moleculas/ButtonCTA";
 import { LuGithub } from "react-icons/lu";
