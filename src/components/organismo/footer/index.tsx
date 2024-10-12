@@ -9,14 +9,14 @@ import logo from "../../../../public//images/logo.svg"
 function Footer() {
     return (
         <>
-            <footer className="flex flex-row w-full fixed  absolute z-10 items-center justify-between py-7 px-10 bg-gray-900 border-t-2 border-gray-800 ">
+            <footer className="sm:flex flex-row w-full items-center justify-between  p-5 border-t-2 border-gray-800 sm:p-7">
 
-                <div className="flex flex-row items-center gap-7">
+                <div className="flex flex-col sm:flex-row items-center gap-7">
                     <Image src={logo} alt="" width={50} />
-                    <p className="text-gray-600">Copyright © Gean Ferreira</p>
+                    <p className="text-gray-600">Copyright ©GeanFerreira2024</p>
                 </div>
 
-                <div className="flex flex-rol gap-5 text-[24px] text-gray-500 h-8 " >
+                <div className="flex flex-rol w-full justify-center sm:justify-end mt-4 sm:mt-0 gap-5 text-[24px] text-gray-500 h-8 " >
                     <Link href={'https://github.com/Dom-Garotom'} target="_blank" className=" hover:text-white">
                         <FaGithub />
                     </Link>
