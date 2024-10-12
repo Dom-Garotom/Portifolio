@@ -9,7 +9,7 @@ import { MdOutlineMarkEmailRead } from "react-icons/md";
 
 function HeroSection() {
     return (
-        <section className="flex flex-col-reverse md:flex-row-reverse items-center justify-around pt-20 bg-hero-image bg-cover bg-no-repeat h-[100vh]">
+        <section className="min-h-[70vh] sm:h-[100vh] flex flex-col-reverse md:flex-row-reverse items-center justify-around sm:pt-20 bg-hero-image bg-cover bg-no-repeat ">
             <Image
                 className="aspect-auto hidden md:block md:w-[450px] lg:w-[550px] h-[450px]"
                 src={Person}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ImageDefault from "../../../public/images/Foto (1).png"
+import ImageDefault from "../../../../public/images/Foto (1).png"
 
 interface ProjectItemProps {
     src?: any;
