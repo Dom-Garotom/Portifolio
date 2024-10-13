@@ -11,7 +11,7 @@ function Header() {
 
     return (
         <>
-            <header className="sm:absolute sm:bg-transparent top-2 w-full z-10  flex items-center justify-center flex-col bg-hero-image" >
+            <header className="sm:absolute sm:bg-transparent top-2 w-full z-10 bg-no-repeat bg-cover  flex items-center justify-center flex-col bg-hero-image" >
 
                 <div className="flex justify-between w-full  items-center  container  p-5">
 
