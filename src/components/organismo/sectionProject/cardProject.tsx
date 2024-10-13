@@ -17,18 +17,18 @@ interface CardProjectProp {
 
 function CardProject(prop: CardProjectProp) {
     return (
-        <div className="flex flex-col md:flex-row w-full border-y py-10 gap-9 border-gray-700">
-            <div className="w-full md:w-auto">
-                <Image src={prop.image === undefined ? foto : prop.image} width={430} alt={prop.title} className="w-full md:w-auto" />
+        <div className="flex flex-col lg:flex-row w-full border-y py-10 gap-9 border-gray-700">
+            <div className="w-full w-auto lg:min-w-[450px] lg:w-[500px]">
+                <Image src={prop.image === undefined ? foto : prop.image} width={450} height={450} alt={prop.title} className="w-full h-full " />
             </div>
 
-            <div className="flex flex-col py-3 gap-5 w-full md:w-auto">
+            <div className="flex flex-col py-3 gap-5 w-full max-w-[850px]">
                 <div className="flex gap-2 items-center">
                     <CgPathExclude className="text-emerald-500 text-3xl" />
                     <p>{prop.title}</p>
                 </div>
-                <p className="text-gray-400 w-full md:w-[45.4rem] mr-10">{prop.content}</p>
-                <div className="flex gap-2">
+                <p className="text-gray-400 w-full ">{prop.content}</p>
+                <div className="flex flex-wrap gap-2">
                     {prop.children}
                 </div>
                 <div className="flex gap-2 flex-wrap w-full md:w-[300px]">
