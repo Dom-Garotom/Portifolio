@@ -22,7 +22,7 @@ function HerosPages(prop : HeroPagesProps) {
                 </div>
             </div>
 
-            <div className="flex flex-col gap-16 mb-10">
+            <div className="flex flex-col gap-5 mb-9">
                 {prop.children}
             </div>
 
