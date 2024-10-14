@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "nome": "Sistema de Gestão de Tarefas",
+    "description": "Um sistema simples de gerenciamento de tarefas com funcionalidades de criar, editar e excluir tarefas.",
+    "poster": "https://example.com/poster1.png",
+    "stacks": ["React", "Node.js", "MongoDB"],
+    "deploy": "https://example.com/task-manager",
+    "github": "https://github.com/usuario/task-manager",
+    "readme": "# Sistema de Gestão de Tarefas\n\n### Descrição:\nUm sistema simples de gerenciamento de tarefas com funcionalidades de criar, editar e excluir tarefas.\n\n![Poster](https://example.com/poster1.png)\n\n### Tecnologias Utilizadas:\n- React\n- Node.js\n- MongoDB\n\n### Deploy:\n[Link para o sistema](https://example.com/task-manager)\n\n### GitHub:\n[Repositório no GitHub](https://github.com/usuario/task-manager)\n\n### Detalhes:\nEste projeto foi criado para ajudar usuários a gerenciar suas tarefas diárias de forma eficiente. Ele permite criar, editar e excluir tarefas, e tem integração com uma API backend que armazena as tarefas no MongoDB."
+  },
+  {
+    "id": "2",
+    "nome": "Portfólio Pessoal",
+    "description": "Um portfólio pessoal para exibir meus projetos e habilidades.",
+    "poster": "https://example.com/poster2.png",
+    "stacks": ["HTML", "CSS", "JavaScript"],
+    "deploy": "https://example.com/portfolio",
+    "github": "https://github.com/usuario/portfolio",
+    "readme": "# Portfólio Pessoal\n\n### Descrição:\nUm portfólio pessoal para exibir meus projetos e habilidades.\n\n![Poster](https://example.com/poster2.png)\n\n### Tecnologias Utilizadas:\n- HTML\n- CSS\n- JavaScript\n\n### Deploy:\n[Link para o portfólio](https://example.com/portfolio)\n\n### GitHub:\n[Repositório no GitHub](https://github.com/usuario/portfolio)\n\n### Detalhes:\nEste portfólio foi desenvolvido para exibir meus projetos, experiência e habilidades. Ele foi criado utilizando HTML, CSS e JavaScript puro, com foco em design responsivo e performance."
+  },
+  {
+    "id": "3",
+    "nome": "Aplicativo de Clima",
+    "description": "Aplicativo de previsão do tempo que mostra as condições climáticas de qualquer cidade no mundo.",
+    "poster": "https://example.com/poster3.png",
+    "stacks": ["React", "OpenWeather API"],
+    "deploy": "https://example.com/weather-app",
+    "github": "https://github.com/usuario/weather-app",
+    "readme": "# Aplicativo de Clima\n\n### Descrição:\nAplicativo de previsão do tempo que mostra as condições climáticas de qualquer cidade no mundo.\n\n![Poster](https://example.com/poster3.png)\n\n### Tecnologias Utilizadas:\n- React\n- OpenWeather API\n\n### Deploy:\n[Link para o aplicativo](https://example.com/weather-app)\n\n### GitHub:\n[Repositório no GitHub](https://github.com/usuario/weather-app)\n\n### Detalhes:\nEste aplicativo de clima consome a API OpenWeather para mostrar as condições climáticas de uma cidade específica, como temperatura, umidade e velocidade do vento. O usuário pode pesquisar por qualquer cidade do mundo."
+  },
+  {
+    "id": "4",
+    "nome": "E-commerce de Eletrônicos",
+    "description": "Uma loja virtual de eletrônicos com funcionalidades de carrinho de compras e pagamentos.",
+    "poster": "https://example.com/poster4.png",
+    "stacks": ["Next.js", "Stripe API", "MongoDB"],
+    "deploy": "https://example.com/ecommerce",
+    "github": "https://github.com/usuario/ecommerce",
+    "readme": "# E-commerce de Eletrônicos\n\n### Descrição:\nUma loja virtual de eletrônicos com funcionalidades de carrinho de compras e pagamentos.\n\n![Poster](https://example.com/poster4.png)\n\n### Tecnologias Utilizadas:\n- Next.js\n- Stripe API\n- MongoDB\n\n### Deploy:\n[Link para o e-commerce](https://example.com/ecommerce)\n\n### GitHub:\n[Repositório no GitHub](https://github.com/usuario/ecommerce)\n\n### Detalhes:\nEste projeto é um e-commerce funcional desenvolvido com Next.js. Ele inclui funcionalidades como navegação por produtos, adição ao carrinho, checkout integrado com a API do Stripe, e um backend que gerencia os dados dos produtos e usuários no MongoDB."
+  }
+]

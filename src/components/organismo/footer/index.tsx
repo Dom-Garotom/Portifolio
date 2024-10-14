@@ -26,9 +26,9 @@ function Footer() {
                     <Link href={'https://mail.google.com/mail/?view=cm&fs=1&to=geanoficial14@gmail.com&su=Contato&body=Como%20gostaria%20de%20trabalhar%20comigo?'} target="_blank" className=" hover:text-white">
                         <SiGmail />
                     </Link>
-                    <Link href={'https://discord.com/channels/@me'} className="text-white" title="gean9770"  target="_blank">
+                    <Link href={"https://discordapp.com/users/591655944635678744"}className="text-white"  target="_blank">
                         <BsDiscord />
-                    </Link>
+                    </Link>                  
                 </div>
             </footer>
         </>

@@ -9,7 +9,7 @@ interface ButtonCTAprop{
 function ButtonCTA (prop:ButtonCTAprop){
     return(
         <button className="flex items-center gap-5 bg-emerald-600 px-5 py-3 font-mono text-lg font-light rounded-lg text-white hover:bg-emerald-800 transition-all">
-            <Link href={prop.caminho != null ? prop.caminho : "/" } >
+            <Link href={prop.caminho != null ? prop.caminho : "/" } target="_blank">
                 {prop.content}
             </Link>
             <FaArrowRightLong />
