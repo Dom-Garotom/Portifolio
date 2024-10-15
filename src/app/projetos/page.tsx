@@ -37,13 +37,13 @@ function ProjectPage() {
             <section className="flex flex-row justify-center bg-gray-900 py-16">
                 <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-[90vw] lg:max-w-[80vw] w-full">
                     {data.map((item) => (
-                        <Link key={item.id} href={`/project/${item.id}`} target="_blank" className="">
+                        <Link key={item.id} href={`/project/${item.id}`}>
                             <ProjectItem
 
                                 title={item.nome}
                                 content={item.description}
                                 tecnologia={item.stacks}
-                                src={undefined}
+                                src={item.poster}
                             />
                         </Link>
                     ))}

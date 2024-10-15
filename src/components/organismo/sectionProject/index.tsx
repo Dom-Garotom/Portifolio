@@ -1,16 +1,11 @@
 import Link from "next/link";
 import TitleDefault from "../competence/title";
-import { FaArrowRightLong } from "react-icons/fa6";
 import CardProject from "./cardProject";
 import ItenSkill from "../hero/itenSkill";
 import LinkDefault from "./linkDefault";
-import Eduster from "../../../public/tumbs/tumb-eduster.png";
 import Pagination from "../../../../public/tumbs/tumb-pagination.png";
 import Lista from "../../../../public/tumbs/tumb-lista.png";
 import ToDo from "../../../../public/tumbs/tumb-toDo.png";
-import Lingua from "../../../public/tumbs/tumb-lingua.png";
-import Musik from "../../../public/tumbs/tumb-musik.png";
-
 function ProjectSection() {
     const projects = [
         {
@@ -35,6 +30,9 @@ function ProjectSection() {
             skills: ["React js", "Tailwind"],
         },
     ];
+
+    
+
 
     return (
         <section className="flex flex-col items-center pt-20 bg-gray-900 w-full pb-20">

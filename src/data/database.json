@@ -1,42 +1,80 @@
 [
   {
     "id": "1",
-    "nome": "Sistema de Gestão de Tarefas",
-    "description": "Um sistema simples de gerenciamento de tarefas com funcionalidades de criar, editar e excluir tarefas.",
-    "poster": "https://example.com/poster1.png",
-    "stacks": ["React", "Node.js", "MongoDB"],
-    "deploy": "https://example.com/task-manager",
-    "github": "https://github.com/usuario/task-manager",
-    "readme": "# Sistema de Gestão de Tarefas\n\n### Descrição:\nUm sistema simples de gerenciamento de tarefas com funcionalidades de criar, editar e excluir tarefas.\n\n![Poster](https://example.com/poster1.png)\n\n### Tecnologias Utilizadas:\n- React\n- Node.js\n- MongoDB\n\n### Deploy:\n[Link para o sistema](https://example.com/task-manager)\n\n### GitHub:\n[Repositório no GitHub](https://github.com/usuario/task-manager)\n\n### Detalhes:\nEste projeto foi criado para ajudar usuários a gerenciar suas tarefas diárias de forma eficiente. Ele permite criar, editar e excluir tarefas, e tem integração com uma API backend que armazena as tarefas no MongoDB."
+    "nome": "Games Camp",
+    "description": "Desenvolvimento de uma aplicação para a divulgação do evento da GamesCamp 2024. O projeto foi desenvolvido como parte do desafio da trilha do Nadic, utilizando React, StyledComponents e TypeScript.",
+    "poster": "/tumbs/gamesCamp-poster.png",
+    "stacks": [
+      "React",
+      "Sonner",
+      "Styled-Components",
+      "TypeScript",
+      "React-Router-Dom"
+    ],
+    "deploy": "https://games-camp-react.vercel.app",
+    "github": "https://github.com/Dom-Garotom/GamesCamp-React",
+    "readme": "<img src=\"/tumbs/gamesCamp-poster.png\" alt=\"Imagem ilustrativa do evento\" width=\"100%\" />\n\n\n<img src=\"/tumbs/gamesCamp-poster-2.png\" alt=\"Imagem ilustrativa do evento\" width=\"100%\" />\n\n\n# GamesCamp - Desafio Nadic\n\nEste projeto foi desenvolvido como parte do desafio da trilha do Nadic, utilizando React, StyledComponents e TypeScript para criar uma interface visual e interativa de um evento fictício. O objetivo deste desafio é simular o desenvolvimento de uma aplicação visual para a gestão de eventos, aplicando conceitos de frontend.\n\nNessa segunda parte do desafio foi adicionada uma página de confirmação de inscrição em relação ao projeto inicial, como também melhorias na responsividade e no design system dos componentes do projeto.\n\nEsse projeto, mesmo simples, foi um grande aprendizado sobre Styled Components e a criação de um design system próprio, me ajudando a aumentar minha experiência como programador. Que venha o próximo desafio!\n\n## Tecnologias Utilizadas:\n- React\n- TypeScript\n- Styled Components\n- React Router DOM\n- Notion\n\n## Como Rodar o Projeto:\nClone o repositório:\n\n      bash\ngit clone https://github.com/Dom-Garotom/GamesCamp.git\n      \n\nNavegue até o diretório do projeto:\n\n      bash\ncd gamesCamp\n      \n\nExecute o projeto em localhost:\n\n      bash\nnpm run dev\n      \n\n"
   },
   {
     "id": "2",
-    "nome": "Portfólio Pessoal",
-    "description": "Um portfólio pessoal para exibir meus projetos e habilidades.",
-    "poster": "https://example.com/poster2.png",
-    "stacks": ["HTML", "CSS", "JavaScript"],
-    "deploy": "https://example.com/portfolio",
-    "github": "https://github.com/usuario/portfolio",
-    "readme": "# Portfólio Pessoal\n\n### Descrição:\nUm portfólio pessoal para exibir meus projetos e habilidades.\n\n![Poster](https://example.com/poster2.png)\n\n### Tecnologias Utilizadas:\n- HTML\n- CSS\n- JavaScript\n\n### Deploy:\n[Link para o portfólio](https://example.com/portfolio)\n\n### GitHub:\n[Repositório no GitHub](https://github.com/usuario/portfolio)\n\n### Detalhes:\nEste portfólio foi desenvolvido para exibir meus projetos, experiência e habilidades. Ele foi criado utilizando HTML, CSS e JavaScript puro, com foco em design responsivo e performance."
+    "nome": "White Corals",
+    "description": "Criação de um sistema de controle de inscrições e submissão de artigos para um evento científico sobre o tema 'Branqueamento de Corais'",
+    "poster": "/tumbs/whiteCorals/white-coral-login.png",
+    "stacks": [
+      "Next",
+      "Sonner",
+      "Styled-Components",
+      "TypeScript",
+      "Axios"
+    ],
+    "deploy": "https://white-corals.vercel.app/login",
+    "github": "https://github.com/Dom-Garotom/white-corals?tab=readme-ov-file",
+    "readme": "# Sistema de Controle de Inscrições para Evento Científico\n\nEste projeto foi desenvolvido utilizando Next.js e tem como objetivo criar um sistema de controle de inscrições para um evento científico sobre o tema \"Branqueamento de Corais\". O sistema permite que usuários se inscrevam no evento, publiquem artigos científicos e que administradores acompanhem o número de inscrições e artigos submetidos.\n\n## O Projeto\n\nUma das grandes satisfações deste projeto foi a capacidade de traduzir uma ideia em uma aplicação funcional. A tela de login é o primeiro contato do usuário com o sistema e busca transmitir uma sensação de acolhimento. Aqui está uma visão das principais telas:\n\n### Tela de login\n![Tela de login](/tumbs/whiteCorals/white-coral-login.png)\n\n### Tela da Home\n![Tela da Home](/tumbs/whiteCorals/white-coral-home.png)\n\n### Tela de preview dos artigos\n![Tela de preview dos artigos](/tumbs/whiteCorals/white-coral-preview.png)\n\n### Tela do Artigo\n![Tela do Artigo](/tumbs/whiteCorals/white-coral-artigo.png)\n\n### Tela de postar Arquivo\n![Tela de postar Arquivo](/tumbs/whiteCorals/white-coral-create-post.png)\n\n### Tela do Dashboard\n![Tela do Dashboard](/tumbs/whiteCorals/white-coral-dashBoard.png)\n\n## Tecnologias Utilizadas\n\n- Next.js: Um framework React que permite renderização híbrida e fácil roteamento de páginas.\n- Axios: Biblioteca usada para consumo de APIs e integração de dados.\n- Styled Components: Utilizado para a criação de componentes estilizados com CSS-in-JS, garantindo escopo de estilo e facilidade na manutenção de design.\n- Cookies e Local Storage: Gerenciamento de sessões de usuários e persistência de informações.\n\n## Desafios e Aprendizados\n\nUm dos principais desafios que enfrentei foi a implementação do Styled Components. No início, me senti um pouco perdido na forma como os estilos eram aplicados aos componentes, mas, à medida que fui praticando e me familiarizando com a biblioteca, consegui criar um design coeso e visualmente agradável. Aprender a usar Styled Components me permitiu perceber o poder do CSS-in-JS e como ele pode simplificar a manutenção de estilos em projetos maiores.\n\nAlém disso, me inspirei em pessoas que admiro para desenhar as telas. Foi gratificante ver como as referências se transformaram em algo concreto, e isso realmente elevou a qualidade do design do projeto. A experiência de criar uma interface que fosse não apenas funcional, mas também esteticamente agradável, foi extremamente recompensadora.\n\nOutro grande aprendizado foi em relação aos  padrões de commit do Git . Embora no início eu não tivesse um padrão claro, com o tempo aprendi a importância de manter um histórico de commits organizado e informativo. Isso não apenas ajuda na colaboração com outros desenvolvedores, mas também me permitiu entender melhor a evolução do projeto.\n\n## Funcionalidades\n\n1.  Sistema de Inscrições : Usuários podem se inscrever para o evento através do formulário de cadastro.\n2.  Publicação de Artigos : Após o registro, usuários podem submeter artigos relacionados ao evento.\n3.  Painel Administrativo : Administradores podem visualizar a quantidade de inscritos e de artigos submetidos.\n\n## Autenticação\n\nO sistema conta com autenticação de usuários, permitindo login e acesso a áreas restritas. A autenticação utiliza cookies e armazenamento no Local Storage para persistir as informações da sessão do usuário."
   },
   {
     "id": "3",
-    "nome": "Aplicativo de Clima",
-    "description": "Aplicativo de previsão do tempo que mostra as condições climáticas de qualquer cidade no mundo.",
-    "poster": "https://example.com/poster3.png",
-    "stacks": ["React", "OpenWeather API"],
-    "deploy": "https://example.com/weather-app",
-    "github": "https://github.com/usuario/weather-app",
-    "readme": "# Aplicativo de Clima\n\n### Descrição:\nAplicativo de previsão do tempo que mostra as condições climáticas de qualquer cidade no mundo.\n\n![Poster](https://example.com/poster3.png)\n\n### Tecnologias Utilizadas:\n- React\n- OpenWeather API\n\n### Deploy:\n[Link para o aplicativo](https://example.com/weather-app)\n\n### GitHub:\n[Repositório no GitHub](https://github.com/usuario/weather-app)\n\n### Detalhes:\nEste aplicativo de clima consome a API OpenWeather para mostrar as condições climáticas de uma cidade específica, como temperatura, umidade e velocidade do vento. O usuário pode pesquisar por qualquer cidade do mundo."
+    "nome": "Gerenciador de tarefas",
+    "description": "Criação de um gerenciador de tarefas para aplicação dos conhecimentos aprendidos em estudos e teste para uma vaga front-end.",
+    "poster": "/tumbs/gerenciadorDeTarefas.png",
+    "stacks": [
+      "CSS",
+      "HTML",
+      "Javscript",
+      "LocalStorage"
+    ],
+    "deploy": "https://dom-garotom.github.io/Gerenciador-de-tarefas/",
+    "github": "https://github.com/Dom-Garotom/Gerenciador-de-tarefas",
+    "readme": "<img src=\"/tumbs/gerenciadorDeTarefas.png\" width=\"100%\" alt=\"imagem ilustrativa do projeto\"/>\n\n# Gerenciador de Tarefas\n\nUm aplicativo simples para gerenciar tarefas diárias, permitindo adicionar, concluir e remover tarefas. O projeto utiliza HTML, CSS e JavaScript puro, armazenando dados localmente no navegador. Foi criado a partir de um desafio de uma vaga front-end com o objetivo de ganhar mais experiência e aprender como funciona um teste para uma vaga.\n\n## Funcionalidades\n\n- Adicionar novas tarefas.\n- Marcar tarefas como concluídas.\n- Remover tarefas pendentes.\n- Exibir a data atual e o dia da semana.\n- Armazenar dados localmente usando localStorage.\n- Realizar buscas por tarefas.\n\n## Estrutura do Projeto\n\n- index.html: Estrutura básica do HTML.\n- styles.css: Estilização do aplicativo.\n- script.js: Lógica do aplicativo.\n\n## Como Usar\n\n1.   Adicionar Tarefas  : Digite a tarefa no campo de entrada e pressione \"Enter\" ou clique em \"Adicionar\".\n2.   Concluir Tarefas  : Clique no ícone de verificação ao lado da tarefa para marcá-la como concluída.\n3.   Remover Tarefas  : Clique no ícone de menos ao lado da tarefa para removê-la da lista.\n4.   Buscar Tarefas  : Utilize o campo de busca para encontrar tarefas específicas.\n\n## Como Funciona\n\nO aplicativo utiliza localStorage para armazenar tarefas pendentes e concluídas, permitindo que os dados persistam entre as sessões do navegador. As tarefas são atualizadas em tempo real na interface do usuário."
   },
   {
     "id": "4",
-    "nome": "E-commerce de Eletrônicos",
-    "description": "Uma loja virtual de eletrônicos com funcionalidades de carrinho de compras e pagamentos.",
-    "poster": "https://example.com/poster4.png",
-    "stacks": ["Next.js", "Stripe API", "MongoDB"],
-    "deploy": "https://example.com/ecommerce",
-    "github": "https://github.com/usuario/ecommerce",
-    "readme": "# E-commerce de Eletrônicos\n\n### Descrição:\nUma loja virtual de eletrônicos com funcionalidades de carrinho de compras e pagamentos.\n\n![Poster](https://example.com/poster4.png)\n\n### Tecnologias Utilizadas:\n- Next.js\n- Stripe API\n- MongoDB\n\n### Deploy:\n[Link para o e-commerce](https://example.com/ecommerce)\n\n### GitHub:\n[Repositório no GitHub](https://github.com/usuario/ecommerce)\n\n### Detalhes:\nEste projeto é um e-commerce funcional desenvolvido com Next.js. Ele inclui funcionalidades como navegação por produtos, adição ao carrinho, checkout integrado com a API do Stripe, e um backend que gerencia os dados dos produtos e usuários no MongoDB."
-  }
+    "nome": "Site da Escola de Inglês - Lingua",
+    "description": "Um site criado para uma escola de inglês chamada Lingua, desenvolvido com o intuito de praticar o uso de Next.js, Tailwind CSS e ShadCn.",
+    "poster": "/tumbs/tumb-lingua.png",
+    "stacks": [
+      "Next.js",
+      "Tailwind CSS",
+      "ShadCn"
+    ],
+    "deploy": "https://example.com/site-lingua",
+    "github": "https://github.com/Dom-Garotom/Lingua",
+    "readme": "<img src=\"/tumbs/tumb-lingua.png\" width=\"100%\" alt=\"imagem ilustrativa do site da escola de inglês\"/>\n\n# Site da Escola de Inglês - Lingua\n\nEste projeto é um site para uma escola de inglês chamada   Lingua  . O objetivo principal foi praticar a utilização de   Next.js  ,   Tailwind CSS   e   ShadCn  , criando uma aplicação responsiva e moderna.\n\n## Tecnologias Utilizadas\n\n-   Next.js  : Framework React para renderização do lado do servidor e navegação eficiente entre páginas.\n-   Tailwind CSS  : Biblioteca utilitária para estilização rápida e customizada de componentes.\n-   ShadCn  : Componentes estilizados integrados para construção de interfaces consistentes.\n\n## Funcionalidades\n\n- Páginas informativas sobre os cursos oferecidos pela escola.\n- Navegação rápida e otimizada entre seções do site.\n- Estilização moderna e responsiva usando Tailwind CSS.\n\n## Como Rodar o Projeto\n\nClone o repositório:\n\n```bash\ngit clone https://github.com/usuario/site-lingua.git\n```\n\nNavegue até o diretório do projeto:\n\n```bash\ncd site-lingua\n```\n\nExecute o projeto localmente:\n\n```bash\nnpm run dev\n```\n\nAbra o navegador e acesse:\n\n```\nhttp://localhost:3000\n```"
+  },
+  {
+    "id": "5",
+    "nome": "Eduster: Gerenciamento de Salas",
+    "description": "Eduster é uma plataforma de gerenciamento e agendamentos de salas desenvolvida como parte de um projeto universitário para ensinar sobre as etapas de desenvolvimento de um projeto real.",
+    "poster": "/tumbs/tumb-eduster.png",
+    "stacks": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "deploy": "https://dom-garotom.github.io/Projeto---Eduster-/",
+    "github": "https://github.com/Dom-Garotom/Projeto---Eduster-",
+    "readme": "# Eduster: Sistema de Agendamento e Gerenciamento de Salas\n\n![Imagem ilustrativa do site](/tumbs/tumb-eduster.png)\n\n## Descrição\n\nA   Eduster   é uma plataforma de gerenciamento e agendamentos de salas. Este projeto foi desenvolvido na matéria de Web Design na faculdade, com o objetivo de ensinar sobre as etapas de desenvolvimento de um projeto real, além de utilizar tecnologias e conceitos vistos em sala. A aplicação é desenvolvida com   JavaScript  ,   HTML   e   CSS  , além de algumas bibliotecas extras.\n\n## Tecnologias Utilizadas\n\n-   HTML  : Estrutura básica da aplicação.\n-   CSS  : Estilização e layout responsivo.\n-   JavaScript  : Lógica do aplicativo e interatividade.\n\n## Funcionalidades\n\n- Agendamento de salas: Usuários podem reservar salas de forma prática.\n- Confirmação de agendamentos: Modais são utilizados para confirmar os agendamentos.\n- Listagem de salas: Visualização de salas ocupadas e livres.\n- Autenticação de usuários: Sistema de login e registro para gerenciar acessos (em desenvolvimento).\n\n## 📈 Status de Desenvolvimento\n\n- [x] Criação das páginas iniciais.\n- [x] Criação do responsivo das páginas iniciais.\n- [x] Criação das páginas de login e registro.\n- [x] Criação do responsivo das páginas de login e registro.\n- [ ] Criação da verificação e autenticação das páginas de login e registro.\n- [ ] Criação da página principal do projeto.\n- [ ] Criação do responsivo da página principal.\n- [x] Criação dos modais para agendar as salas.\n- [x] Responsivo dos modais para agendar as salas.\n- [x] Criação dos modais para confirmar os agendamentos e modais de dúvidas.\n- [ ] Criação do modal para listar salas ocupadas e vazias.\n- [x] Responsivo do modal para listar salas.\n- [ ] Atualizar o responsivo da página dos pacotes.\n\n## Desafios Enfrentados\n\n- Desenvolvimento de uma interface responsiva.\n- Criação de modais dinâmicos para uma experiência de usuário fluida.\n- Implementação de um sistema de autenticação.\n\n## Próximos Passos\n\n- Finalizar a implementação do sistema de autenticação.\n- Desenvolver a página principal com todas as funcionalidades ativas.\n- Implementar melhorias contínuas com base em feedbacks dos usuários.\n\n"
+}
+  
+
+
 ]
