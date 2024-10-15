@@ -10,11 +10,11 @@ interface ProjectItemProps {
 
 function ProjectItem(prop: ProjectItemProps) {
     return (
-        <div className="bg-gray-800 w-[350px] h-full rounded-t-[25px]  rounded-b-[10px] opacity-45 hover:opacity-100 transition-all">
-            <Image src={prop.src == undefined ? (ImageDefault) : (prop.src)} alt="Imagem do projeto" width={350} height={192} className="rounded-t-[15px] rounded-b-[0px]" />
-            <div className="flex flex-col gap-3 p-7 bg-gray-800 w-[350px] h-[244px] rounded-b-[10px]">
+        <div className="bg-gray-800 max-w-[350px] w-full min-h-[390px] rounded-t-[25px]  rounded-b-[10px] opacity-45 hover:opacity-100 transition-all">
+            <Image src={prop.src == undefined ? (ImageDefault) : (prop.src)} alt="Imagem do projeto" width={350} className="rounded-t-[15px] rounded-b-[0px] h-[189px] w-full" />
+            <div className="flex flex-col gap-3 p-3 lg:p-7 bg-gray-800 max-w-[350px] w-full h-[250px] rounded-b-[10px]">
                 <h3 className="text-gray-50 font-semibold">{prop.title}</h3>
-                <p className="w-[286px] h-[96px] text-base truncate-lines-7 text-gray-400 mb-5">{prop.content}</p>
+                <p className="max-w-[286px] w-full h-[96px] text-base truncate-lines-7 text-gray-400 mb-5">{prop.content}</p>
                 <p className="text-gray-300">{prop.tecnologia}</p>
 
             </div>

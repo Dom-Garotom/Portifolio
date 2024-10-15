@@ -76,10 +76,10 @@ function ProjectPage() {
                 href="/"
             />
 
-            <section className="flex flex-row justify-center bg-gray-900">
-                <div className="flex gap-5 justify-center flex-wrap px-40 py-40">
+            <section className="flex flex-row justify-center bg-gray-900 py-16">
+                <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-[90vw] lg:max-w-[80vw] w-full">
                     {projects.map((item) => (
-                        <Link key={item.id} href={`${item.url}`} target="_blank" >
+                        <Link key={item.id} href={`${item.url}`} target="_blank" className="">
                             <ProjectItem
                                 
                                 title={item.title}
