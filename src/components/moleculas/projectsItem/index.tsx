@@ -1,11 +1,12 @@
 import Image from "next/image";
 import ImageDefault from "../../../../public/images/Foto (1).png"
+import { StaticImageData } from "next/image";
 
 interface ProjectItemProps {
-    src?: any;
+    src?: StaticImageData;
     title: string;
     content: string;
-    tecnologia: string;
+    tecnologia: string[];
 }
 
 function ProjectItem(prop: ProjectItemProps) {
@@ -15,7 +16,11 @@ function ProjectItem(prop: ProjectItemProps) {
             <div className="flex flex-col gap-3 p-3 lg:p-7 bg-gray-800 max-w-[350px] w-full h-[250px] rounded-b-[10px]">
                 <h3 className="text-gray-50 font-semibold">{prop.title}</h3>
                 <p className="max-w-[286px] w-full h-[96px] text-base truncate-lines-7 text-gray-400 mb-5">{prop.content}</p>
-                <p className="text-gray-300">{prop.tecnologia}</p>
+                <p className="text-gray-300">{
+                    prop.tecnologia.map(text => ((
+                        text + " "
+                    )))
+                }</p>
 
             </div>
         </div>
