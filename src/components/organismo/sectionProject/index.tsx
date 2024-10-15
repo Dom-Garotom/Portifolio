@@ -1,35 +1,26 @@
-import Link from "next/link";
+"use client"
+
 import TitleDefault from "../competence/title";
 import CardProject from "./cardProject";
 import ItenSkill from "../hero/itenSkill";
 import LinkDefault from "./linkDefault";
-import Pagination from "../../../../public/tumbs/tumb-pagination.png";
-import Lista from "../../../../public/tumbs/tumb-lista.png";
-import ToDo from "../../../../public/tumbs/tumb-toDo.png";
+import { useEffect , useState } from "react";
+import axios from "axios";
+import { DataBaseProject } from "@/types/dataBase";
+
 function ProjectSection() {
-    const projects = [
-        {
-            title: "Pagination",
-            url: "https://github.com/Dom-Garotom/Lista-de-pedidos",
-            content: "A criação de uma aplicação que consome dados de uma api fazendo a paginação desses dados.",
-            image: Pagination,
-            skills: ["Next", "Tailwind", "hooks do Next"],
-        },
-        {
-            title: "Gerenciador de tarefas",
-            url: "https://github.com/Dom-Garotom/Gerenciador-de-tarefas",
-            content: "Criação de um gerenciador de tarefas para aplicar o conhecimento aprendido em estudos anteriores. Uso principal de elementos Dom, datas, css, html e javascript.",
-            image: ToDo,
-            skills: ["Javascript", "Css", "Html"],
-        },
-        {
-            title: "Lista de compras",
-            url: "https://github.com/Dom-Garotom/Lista-de-compras-react",
-            content: "Criando uma simples página react com intuito de praticar o uso dos hooks criando uma lista de compras interativa.",
-            image: Lista,
-            skills: ["React js", "Tailwind"],
-        },
-    ];
+    const [data, setData] = useState<DataBaseProject[]>([]);
+
+
+    useEffect(() => {
+        axios.get("http://localhost:3000/api/getData")
+            .then(response => {
+                setData(response.data);
+            })
+            .catch((error) =>{
+                console.error(error)
+            })
+    }, [])
 
     
 
@@ -40,15 +31,15 @@ function ProjectSection() {
                 <TitleDefault title="Projetos em destaque" subTitle="destaques" />
 
                 <div className="mt-10 mb-5 w-full">
-                    {projects.map((project, index) => (
+                    {data.map((project, index) => (
                         <CardProject
                             key={index}
-                            title={project.title}
-                            url={project.url}
-                            content={project.content}
-                            image={project.image}
+                            title={project.nome}
+                            url={`/project/${project.id}`}
+                            content={project.description}
+                            image={project.poster}
                         >
-                            {project.skills.map((skill, skillIndex) => (
+                            {project.stacks.map((skill, skillIndex) => (
                                 <ItenSkill key={skillIndex} content={skill} />
                             ))}
                         </CardProject>

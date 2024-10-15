@@ -11,7 +11,7 @@ interface CardProjectProp {
     title: string;
     content: string;
     url: string;
-    image?: StaticImageData;
+    image?: string;
     children?: ReactNode;
 }
 
