@@ -66,7 +66,7 @@ export default function ArticlesPage() {
                     )))}
                 </div>
 
-                <div className="flex space-x-2">
+                <div className="flex space-x-2 justify-center">
                     <ButtonGit
                         content="GitHub do projeto"
                         caminho={data?.github}
