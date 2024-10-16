@@ -41,7 +41,7 @@ function HeroSection() {
                     <h1 className="text-3xl md:text-5xl font-bold mb-4">Gean Ferreira</h1>
                 </div>
 
-                <p className="text-gray-400 w-full max-w-[530px]">Olá, meu nome é Gean Ferreira e sou um desenvolvedor front-end apaixonado por tecnologia. Com <b className="text-white" >1 ano de estudos em tecnologia</b>. Meu objetivo é criar interfaces de usuário bonitas e fazer o que amo. Gosto de projetos desafiadores, estou sempre aberto a novas oportunidades e desafios.</p>
+                <p className="text-gray-400 w-full max-w-[530px]">Olá, meu nome é Gean Ferreira e sou um <b className="text-slate-100">desenvolvedor front-end</b> apaixonado por tecnologia. Meu objetivo é criar interfaces de usuário bonitas e fazer o que amo. Gosto de projetos desafiadores, estou sempre aberto a novas oportunidades e desafios.</p>
 
                 <div className="flex flex-row flex-wrap gap-2 max-w-full md:max-w-[450px]">
                     {skills.map((skill, index) => (

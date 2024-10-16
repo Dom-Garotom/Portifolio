@@ -9,6 +9,7 @@ import { marked } from "marked"
 import ButtonDeploy from "@/components/atomos/buttonDeploy";
 import ButtonGit from "@/components/atomos/buttonGit";
 import ItenSkill from "@/components/organismo/hero/itenSkill";
+import ButtonTop from "@/components/atomos/buttonTop";
 
 
 
@@ -49,6 +50,7 @@ export default function ArticlesPage() {
 
     return (
         <main>
+            <ButtonTop/>
             <HerosPages
                 title={data?.nome!}
                 subTitle="projeto"
