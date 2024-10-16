@@ -3,6 +3,7 @@ import CompetenciaSection from "../components/organismo/competence";
 import ProjectSection from "../components/organismo/sectionProject";
 import ServiceSection from "../components/organismo/servicesSection"
 import SectionContact from "@/components/organismo/sectionContact";
+import Contact from "@/components/organismo/contact";
 
 export default function Home() {
   return (
@@ -10,8 +11,9 @@ export default function Home() {
       <HeroSection/>
       <CompetenciaSection/>
       <ProjectSection/>
-      <ServiceSection/>
       <SectionContact/>
+      <ServiceSection/>
+      <Contact/>
     </main>
   );
 }
