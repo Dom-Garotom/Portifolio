@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Person from "../../../../public/images/person-12.png";
+import Person from "../../../../public/images/person.jpeg";
 import ItenSkill from "./itenSkill";
 import ButtonCTA from "../../moleculas/ButtonCTA";
 import { LuGithub } from "react-icons/lu";
@@ -22,10 +22,13 @@ function HeroSection() {
                 <div className="flex flex-row flex-wrap gap-2 max-w-full md:max-w-[450px]">
                     <ItenSkill content="Next js" />
                     <ItenSkill content="React" />
-                    <ItenSkill content="Javascript" />
                     <ItenSkill content="Typescript" />
                     <ItenSkill content="Tailwind" />
-                    <ItenSkill content="Ui/UX" />
+                    <ItenSkill content="Styled Component" />
+                    <ItenSkill content="Shadcn" />
+                    <ItenSkill content="Axios" />
+                    <ItenSkill content="Python" />
+                    <ItenSkill content="Node" />
                     <ItenSkill content="Git" />
                 </div>
 
@@ -48,11 +51,11 @@ function HeroSection() {
                 </div>
             </div>
             <div>
-                <Image
+                {/* <Image
                     className="aspect-auto hidden md:block md:w-[450px] lg:w-[550px] h-[450px]"
                     src={Person}
                     alt=""
-                />
+                /> */}
             </div>
         </section>
     );

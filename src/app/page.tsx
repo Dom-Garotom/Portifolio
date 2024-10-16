@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HeroSection from "../components/organismo/hero";
 import CompetenciaSection from "../components/organismo/competence";
 import ProjectSection from "../components/organismo/sectionProject";

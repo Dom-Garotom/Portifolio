@@ -13,7 +13,7 @@ function Header() {
         <>
             <header className="sm:absolute sm:bg-transparent top-2 w-full z-10 bg-no-repeat bg-cover  flex items-center justify-center flex-col bg-hero-image" >
 
-                <div className="flex justify-between w-full  items-center  container  p-5">
+                <div className="flex justify-between w-full  items-center  container p-5">
 
                     <div>
                         <Image
@@ -38,7 +38,7 @@ function Header() {
                 </div>
 
                 {isVisible &&
-                    <nav className="flex flex-col w-full items-center gap-4  bg-hero-image transition-all transition-[300ms] sm:hidden ">
+                    <nav className="flex flex-col w-full items-center gap-4 p-5 bg-hero-image transition-all transition-[300ms] sm:hidden ">
                         <HeaderLink href="/" content="Home" />
                         <HeaderLink href="/projetos" content="Projetos" />
                         <HeaderLink href="/contact" content="Contatos" />
