@@ -13,7 +13,7 @@ function ProjectSection() {
 
 
     useEffect(() => {
-        axios.get("http://localhost:3000/api/getData")
+        axios.get("https://portifolio-alpha-green.vercel.app/api/getData")
             .then(response => {
                 setData(response.data);
             })
