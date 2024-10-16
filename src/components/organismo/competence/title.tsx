@@ -1,3 +1,6 @@
+"use client"
+import { motion } from "framer-motion"
+
 interface TitleDefaultProps{
     title:string,
     subTitle:string
@@ -5,10 +8,15 @@ interface TitleDefaultProps{
 
 function TitleDefault(prop:TitleDefaultProps) {
     return (
-        <div className="flex items-start flex-col gap-5">
+        <motion.div 
+        initial={{x: -100 , opacity : 0 }}
+        whileInView={{x:0 , opacity: 1}}
+        exit={{x: -100 , opacity: 0}}
+        transition={{duration: 0.6}}
+        className="flex items-start flex-col gap-5">
             <span className="text-emerald-500 tracking-wider text-base sm:text-lg ">. . /{prop.subTitle}</span>
             <h2 className="text-3xl sm:text-4xl font-medium">{prop.title}</h2>
-        </div>
+        </motion.div>
     )
 }
 
