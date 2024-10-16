@@ -1,11 +1,9 @@
-import ButtonCTA from "@/components/moleculas/ButtonCTA";
 import { MdArrowForward } from "react-icons/md";
 
-function ContactPage() {
-    return (
-        <>
 
-            <section className="flex flex-col items-center lg:flex-row   lg:items-start justify-around  pt-40 py-20  w-full bg-gray-900 ">
+export default function Contact() {
+  return (
+    <section id="contact" className="flex flex-col items-center lg:flex-row   lg:items-start justify-around  pt-40 py-20  w-full border-gray-800 border-t-2 bg-gray-900 ">
 
                 <div className="flex flex-col items-center lg:items-start gap-5 text-center lg:text-left p-3">
                     <h2 className="text-6xl font-bold max-w-[560px] w-ful text-emerald-500">Vamos Trabalhar Juntos</h2>
@@ -75,9 +73,5 @@ function ContactPage() {
                 </form>
 
             </section>
-        </>
-    );
+  )
 }
-
-
-export default ContactPage;

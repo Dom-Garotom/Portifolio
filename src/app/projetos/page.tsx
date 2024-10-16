@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { DataBaseProject } from "@/types/dataBase";
+import ButtonTop from "@/components/atomos/buttonTop";
 
 
 function ProjectPage() {
@@ -26,6 +27,7 @@ function ProjectPage() {
 
     return (
         <>
+            <ButtonTop/>
             <HerosPages
                 title="Meus Projetos"
                 subTitle="projetos"

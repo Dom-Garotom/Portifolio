@@ -1,5 +1,7 @@
+"use client"
+
 import Image from "next/image";
-import Person from "../../../../public/images/person-12.png";
+import Person from "../../../../public/images/person.jpeg";
 import ItenSkill from "./itenSkill";
 import ButtonCTA from "../../moleculas/ButtonCTA";
 import { LuGithub } from "react-icons/lu";
@@ -7,26 +9,51 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaDiscord } from "react-icons/fa";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import Link from "next/link";
+import { motion } from "framer-motion"
 
 function HeroSection() {
+
+    const skills = [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind",
+        "Styled Components",
+        "Shadcn",
+        "Axios",
+        "Python",
+        "Node",
+        "Git"
+    ];
+
+
     return (
-        <section className="min-h-[100vh]  flex items-center justify-around  bg-hero-image bg-cover bg-no-repeat md:gap-3 p-5 ">
-            <div className="flex flex-col h-auto md:max-w-[400px]  gap-5  justify-between items-start ">
+        <section className="min-h-[100vh] overflow-hidden  flex items-center justify-around  bg-hero-image bg-cover bg-no-repeat md:gap-3 p-5 ">
+            <motion.div
+                className="flex flex-col h-auto md:max-w-[400px]  gap-5  justify-between items-start "
+                initial={{ x: -200, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                exit={{ x: -200, opacity: 0 }}
+                transition={{ duration: 0.6 }}
+            >
                 <div>
                     <p className="text-emerald-500 font-mono text-base mb-3">Olá, meu nome é </p>
                     <h1 className="text-3xl md:text-5xl font-bold mb-4">Gean Ferreira</h1>
                 </div>
 
-                <p className="text-gray-400 w-full max-w-[530px]">Olá, meu nome é Gean Ferreira e sou um desenvolvedor front-end apaixonado por tecnologia. Com <b className="text-white" >1 ano de estudos em tecnologia</b>. Meu objetivo é criar interfaces de usuário bonitas e fazer o que amo. Gosto de projetos desafiadores, estou sempre aberto a novas oportunidades e desafios.</p>
+                <p className="text-gray-400 w-full max-w-[530px]">Olá, meu nome é Gean Ferreira e sou um <b className="text-slate-100">desenvolvedor front-end</b> apaixonado por tecnologia. Meu objetivo é criar interfaces de usuário bonitas e fazer o que amo. Gosto de projetos desafiadores, estou sempre aberto a novas oportunidades e desafios.</p>
 
                 <div className="flex flex-row flex-wrap gap-2 max-w-full md:max-w-[450px]">
-                    <ItenSkill content="Next js" />
-                    <ItenSkill content="React" />
-                    <ItenSkill content="Javascript" />
-                    <ItenSkill content="Typescript" />
-                    <ItenSkill content="Tailwind" />
-                    <ItenSkill content="Ui/UX" />
-                    <ItenSkill content="Git" />
+                    {skills.map((skill, index) => (
+                        <ItenSkill
+                            key={index}
+                            content={skill}
+                            initial={{ scale: 0 , opacity: 0 }}
+                            whileInView={{ scale: 1, opacity: 1 }}
+                            exit={{scale:0 , opacity: 0 }}
+                            transition={{ duration: 0.3 , delay: index * 0.1}}
+                        />
+                    ))}
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-5">
@@ -46,13 +73,13 @@ function HeroSection() {
                         </Link>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             <div>
-                <Image
+                {/* <Image
                     className="aspect-auto hidden md:block md:w-[450px] lg:w-[550px] h-[450px]"
                     src={Person}
                     alt=""
-                />
+                /> */}
             </div>
         </section>
     );

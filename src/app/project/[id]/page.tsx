@@ -9,6 +9,7 @@ import { marked } from "marked"
 import ButtonDeploy from "@/components/atomos/buttonDeploy";
 import ButtonGit from "@/components/atomos/buttonGit";
 import ItenSkill from "@/components/organismo/hero/itenSkill";
+import ButtonTop from "@/components/atomos/buttonTop";
 
 
 
@@ -49,6 +50,7 @@ export default function ArticlesPage() {
 
     return (
         <main>
+            <ButtonTop/>
             <HerosPages
                 title={data?.nome!}
                 subTitle="projeto"
@@ -57,7 +59,7 @@ export default function ArticlesPage() {
                 href="/projetos"
             >
 
-                <div className="flex space-x-3 justify-center">
+                <div className="flex gap-3 justify-center w-full flex-wrap ">
                     {data?.stacks.map( (stack , index) => ((
                         <ItenSkill
                             key={index}
@@ -66,7 +68,7 @@ export default function ArticlesPage() {
                     )))}
                 </div>
 
-                <div className="flex space-x-2 justify-center">
+                <div className="flex w-full sm:flex-row flex-col gap-5 items-center justify-center">
                     <ButtonGit
                         content="GitHub do projeto"
                         caminho={data?.github}
