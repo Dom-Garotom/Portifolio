@@ -24,10 +24,10 @@ function Header() {
                         />
                     </div>
 
-                    <nav className="hidden sm:flex  gap-5 sm:gap-10">
+                    <nav className="hidden sm:flex  gap-5 sm:gap-10 scroll-smooth">
                         <HeaderLink href="/" content="Home" />
                         <HeaderLink href="/projetos" content="Projetos" />
-                        <HeaderLink href="/contact" content="Contatos" />
+                        <HeaderLink href="/#contact" content="Contatos"/>
                     </nav>
 
                     <div className="sm:hidden"  onClick={() => setIsVisible(!isVisible)}>
@@ -38,10 +38,10 @@ function Header() {
                 </div>
 
                 {isVisible &&
-                    <nav className="flex flex-col w-full items-center gap-4 p-5 bg-hero-image transition-all transition-[300ms] sm:hidden ">
+                    <nav className="flex flex-col w-full items-center gap-4 p-5 bg-hero-image scroll-smooth transition-all transition-[300ms] sm:hidden ">
                         <HeaderLink href="/" content="Home" />
                         <HeaderLink href="/projetos" content="Projetos" />
-                        <HeaderLink href="/contact" content="Contatos" />
+                        <HeaderLink href="/#contact" content="Contatos" />
                     </nav>
                 }
 
