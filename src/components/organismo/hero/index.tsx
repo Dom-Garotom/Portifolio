@@ -30,20 +30,20 @@ function HeroSection() {
     return (
         <section className="min-h-[100vh] overflow-hidden  flex items-center justify-around  bg-hero-image bg-cover bg-no-repeat md:gap-3 p-5 ">
             <motion.div
-                className="flex flex-col h-auto md:max-w-[400px]  gap-5  justify-between items-start "
+                className="flex flex-col h-auto md:max-w-[80vw]  gap-5  justify-between items-start  md:items-center "
                 initial={{ x: -200, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 exit={{ x: -200, opacity: 0 }}
                 transition={{ duration: 0.6 }}
             >
-                <div>
+                <div className="md:flex md:items-center md:flex-col">
                     <p className="text-emerald-500 font-mono text-base mb-3">Olá, meu nome é </p>
                     <h1 className="text-3xl md:text-5xl font-bold mb-4">Gean Ferreira</h1>
                 </div>
 
-                <p className="text-gray-400 w-full max-w-[530px]">Olá, meu nome é Gean Ferreira e sou um <b className="text-slate-100">desenvolvedor front-end</b> apaixonado por tecnologia. Meu objetivo é criar interfaces de usuário bonitas e fazer o que amo. Gosto de projetos desafiadores, estou sempre aberto a novas oportunidades e desafios.</p>
+                <p className="text-gray-400 w-full max-w-[700px] md:text-center">Olá, meu nome é Gean Ferreira e sou um <b className="text-slate-100">desenvolvedor front-end</b> apaixonado por tecnologia. Meu objetivo é criar interfaces de usuário bonitas e fazer o que amo. Gosto de projetos desafiadores, estou sempre aberto a novas oportunidades e desafios.</p>
 
-                <div className="flex flex-row flex-wrap gap-2 max-w-full md:max-w-[450px]">
+                <div className="flex flex-row flex-wrap gap-2 max-w-full md:max-w-[650px] md:justify-center">
                     {skills.map((skill, index) => (
                         <ItenSkill
                             key={index}
@@ -74,13 +74,6 @@ function HeroSection() {
                     </div>
                 </div>
             </motion.div>
-            <div>
-                {/* <Image
-                    className="aspect-auto hidden md:block md:w-[450px] lg:w-[550px] h-[450px]"
-                    src={Person}
-                    alt=""
-                /> */}
-            </div>
         </section>
     );
 }
