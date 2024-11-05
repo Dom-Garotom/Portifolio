@@ -16,6 +16,7 @@ function HeroSection() {
     const skills = [
         "Next.js",
         "React",
+        "React Native",
         "TypeScript",
         "Tailwind",
         "Styled Components",

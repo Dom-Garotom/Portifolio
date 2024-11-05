@@ -73,8 +73,22 @@
     "deploy": "https://dom-garotom.github.io/Projeto---Eduster-/",
     "github": "https://github.com/Dom-Garotom/Projeto---Eduster-",
     "readme": "# Eduster: Sistema de Agendamento e Gerenciamento de Salas\n\n![Imagem ilustrativa do site](/tumbs/tumb-eduster.png)\n\n## Descrição\n\nA   Eduster   é uma plataforma de gerenciamento e agendamentos de salas. Este projeto foi desenvolvido na matéria de Web Design na faculdade, com o objetivo de ensinar sobre as etapas de desenvolvimento de um projeto real, além de utilizar tecnologias e conceitos vistos em sala. A aplicação é desenvolvida com   JavaScript  ,   HTML   e   CSS  , além de algumas bibliotecas extras.\n\n## Tecnologias Utilizadas\n\n-   HTML  : Estrutura básica da aplicação.\n-   CSS  : Estilização e layout responsivo.\n-   JavaScript  : Lógica do aplicativo e interatividade.\n\n## Funcionalidades\n\n- Agendamento de salas: Usuários podem reservar salas de forma prática.\n- Confirmação de agendamentos: Modais são utilizados para confirmar os agendamentos.\n- Listagem de salas: Visualização de salas ocupadas e livres.\n- Autenticação de usuários: Sistema de login e registro para gerenciar acessos (em desenvolvimento).\n\n## 📈 Status de Desenvolvimento\n\n- [x] Criação das páginas iniciais.\n- [x] Criação do responsivo das páginas iniciais.\n- [x] Criação das páginas de login e registro.\n- [x] Criação do responsivo das páginas de login e registro.\n- [ ] Criação da verificação e autenticação das páginas de login e registro.\n- [ ] Criação da página principal do projeto.\n- [ ] Criação do responsivo da página principal.\n- [x] Criação dos modais para agendar as salas.\n- [x] Responsivo dos modais para agendar as salas.\n- [x] Criação dos modais para confirmar os agendamentos e modais de dúvidas.\n- [ ] Criação do modal para listar salas ocupadas e vazias.\n- [x] Responsivo do modal para listar salas.\n- [ ] Atualizar o responsivo da página dos pacotes.\n\n## Desafios Enfrentados\n\n- Desenvolvimento de uma interface responsiva.\n- Criação de modais dinâmicos para uma experiência de usuário fluida.\n- Implementação de um sistema de autenticação.\n\n## Próximos Passos\n\n- Finalizar a implementação do sistema de autenticação.\n- Desenvolver a página principal com todas as funcionalidades ativas.\n- Implementar melhorias contínuas com base em feedbacks dos usuários.\n\n"
+},
+{
+  "id": "6",
+  "nome": "Links Native",
+  "description": "Este projeto é uma aplicação em React Native desenvolvida durante o minicurso da Rocketseat. A aplicação permite o armazenamento e a organização de links por categorias, com funcionalidades para adicionar, listar e remover links.",
+  "poster": "/tumbs/tumb-linksNative.png",
+  "stacks": [
+    "React Native",
+    "Expo",
+    "AsyncStorage",
+    "UUID",
+    "React Navigation"
+  ],
+  "deploy": "https://github.com/Dom-Garotom/Links-Native",
+  "github": "https://github.com/Dom-Garotom/Links-Native",
+  "readme": "# Links Native: Gerenciamento de Links por Categorias\n\n\n\n## Descrição\n\nO Links Native é um aplicativo mobile desenvolvido com React Native, que permite o armazenamento e a organização de links por categorias. O projeto foi criado durante o minicurso da Rocketseat e oferece funcionalidades de adicionar, listar e remover links.\n\n## Tecnologias Utilizadas\n\n- React Native: Base do desenvolvimento da interface mobile.\n- Expo: Ambiente de desenvolvimento rápido e compatível com React Native.\n- AsyncStorage: Utilizado para armazenamento local dos links.\n- UUID: Geração de identificadores únicos para cada link.\n- React Navigation: Gerenciamento de navegação entre telas.\n\n## Funcionalidades\n\n- Adicionar Link: Permite ao usuário adicionar um link informando o nome, URL e categoria.\n- Listar Links por Categoria: Visualiza os links conforme a categoria escolhida.\n- Remover Link: Remove links previamente adicionados.\n- Feedbacks ao Usuário: Mensagens de alerta informam sobre ações bem-sucedidas ou erros.\n\n## 📈 Status de Desenvolvimento\n\n- [x] Implementação das funcionalidades básicas (adicionar, listar e remover links).\n- [x] Feedback visual e mensagens de confirmação.\n- [ ] Melhorias na performance e otimizações de UX.\n- [ ] Testes e validação para ambientes de produção.\n\n## Desafios Enfrentados\n\n- Adaptação de conhecimentos prévios em React para o React Native.\n- Gestão de armazenamento local com AsyncStorage.\n\n## Próximos Passos\n\n- Implementar otimizações de UX e performance.\n- Explorar recursos adicionais do Expo para futuras funcionalidades.\n\n"
 }
-  
-
 
 ]
