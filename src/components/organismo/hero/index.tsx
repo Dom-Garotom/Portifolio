@@ -58,7 +58,7 @@ function HeroSection() {
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-5">
-                    <ButtonCTA content="Entre em contato" caminho="/contact" />
+                    <ButtonCTA content="Entre em contato" caminho="#contact" />
                     <div className="flex justify-between items-center gap-3 text-2xl">
                         <Link href={"https://github.com/Dom-Garotom"} target="_blank">
                             <LuGithub className="hover:text-emerald-600 text-slate-700 " />
