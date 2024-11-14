@@ -4,27 +4,28 @@ import TitleDefault from "../competence/title";
 import CardProject from "./cardProject";
 import ItenSkill from "../hero/itenSkill";
 import LinkDefault from "./linkDefault";
-import { useEffect , useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { DataBaseProject } from "@/types/dataBase";
 
 function ProjectSection() {
     const [data, setData] = useState<DataBaseProject[]>([]);
+    const [loading , setLoading] = useState(true);
 
-    const stars = data.filter( item => item.star);
-    setData(stars)
 
     useEffect(() => {
         axios.get("https://portifolio-alpha-green.vercel.app/api/getData")
             .then(response => {
-                setData(response.data);
+                const stars = response.data.filter((item: DataBaseProject) => item.star);
+                setData(stars)
             })
-            .catch((error) =>{
+            .catch((error) => {
                 console.error(error)
             })
+            .finally( () => setLoading(false));
     }, [])
 
-    
+
 
 
     return (
@@ -33,7 +34,7 @@ function ProjectSection() {
                 <TitleDefault title="Projetos em destaque" subTitle="destaques" />
 
                 <div className="mt-10 mb-5 w-full">
-                    {data.map((project, index) => (
+                    {loading ? <p>Carregando...</p> : data.map((project, index) => (
                         <CardProject
                             key={index}
                             title={project.nome}
