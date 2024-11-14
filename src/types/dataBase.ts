@@ -7,4 +7,5 @@ export type DataBaseProject = {
     deploy: string,
     github: string,
     readme: string,
+    star: boolean,
 }

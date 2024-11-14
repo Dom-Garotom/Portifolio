@@ -11,6 +11,8 @@ import { DataBaseProject } from "@/types/dataBase";
 function ProjectSection() {
     const [data, setData] = useState<DataBaseProject[]>([]);
 
+    const stars = data.filter( item => item.star);
+    setData(stars)
 
     useEffect(() => {
         axios.get("https://portifolio-alpha-green.vercel.app/api/getData")
